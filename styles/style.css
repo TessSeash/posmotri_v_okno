@@ -114,7 +114,9 @@ ol {
   position: relative;
   background-color: transparent;
   color: white;
-  border: none;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
 }
 
 .search-form__fieldset > .search-form__label > .search-form__textfield {
@@ -124,17 +126,7 @@ ol {
 .search-form__fieldset > .search-form__label > .search-form__textfield:focus {
   outline: 1px solid white;
 }
-.search-form__fieldset > .search-form__label::after {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  height: calc(100% + 2px);
-  border: 1px solid white;
-  border-right: none;
-  border-left: none;
-}
+
 
 .search-form__textfield::placeholder {
   color: white;
