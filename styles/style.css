@@ -72,7 +72,7 @@ li:not(:first-child) {
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 15px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .search-form__fieldset {
@@ -215,7 +215,6 @@ li:not(:first-child) {
 .content__video-card {
   display: flex;
   justify-content: space-between;
-
 }
 
 .content__video-card-title {
