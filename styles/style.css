@@ -138,7 +138,8 @@ li:not(:first-child) {
   border: 1px solid white;
   border-left: none;
   border-right: none;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: inherit;
 }
 
 .search-form__label > .search-form__textfield {
@@ -244,7 +245,7 @@ li:not(:first-child) {
 
 .content__video-card-description {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
 }
 
