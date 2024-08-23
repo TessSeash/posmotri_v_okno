@@ -144,13 +144,10 @@ ol {
   outline: 1px solid white;
 }
 
-.search-form__fieldset > .search-form__label::after {
+.search-form__label > .search-form__textfield {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: calc(100% + 2px);
   border: 1px solid white;
   border-right: none;
   border-left: none;
