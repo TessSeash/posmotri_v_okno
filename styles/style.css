@@ -65,7 +65,7 @@ ol {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .search-form__fieldset {
@@ -85,7 +85,7 @@ ol {
   display: flex;
   align-items: center;
   column-gap: 15px;
-  margin-top: 5px;
+  margin-bottom: 6px;
 }
 
 .search-form__label {
@@ -93,6 +93,7 @@ ol {
   display: inline-flex;
   align-items: center;
   column-gap: 5px;
+  margin-top: 5px;
   cursor: pointer;
   width: fit-content;
 }
@@ -102,10 +103,6 @@ ol {
   > .search-form__label:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
-}
-
-.search-form__label-text {
-  line-height: 1;
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
@@ -128,16 +125,23 @@ ol {
   margin: auto;
 }
 
+.search-form__label > .search-form__textfield {
+font-family: 'Fira Sans Condensed', sans-serif;
+font-weight: 400;
+font-size: 18px;
+color: inherit;
+}
+
 .search-form__textfield {
   position: relative;
   background-color: transparent;
-  color: white;
+  color: inherit;
   border: none;
 }
 
 .search-form__fieldset > .search-form__label > .search-form__textfield {
   outline: none;
-  width: 190px;
+  width: 225px;
 }
 
 .search-form__fieldset > .search-form__label > .search-form__textfield:focus {
@@ -147,21 +151,20 @@ ol {
 .search-form__label > .search-form__textfield {
   content: "";
   position: relative;
-  width: 100%;
   border: 1px solid white;
   border-right: none;
   border-left: none;
 }
 
 .search-form__textfield::placeholder {
-  color: white;
+  color: inherit;
   opacity: 70%;
 }
 
 .content__list {
   overflow: auto;
-  height: 230px;
-  margin-top: 22px;
+  height: 298px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -213,6 +216,9 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   max-width: 194px;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -227,13 +233,12 @@ ol {
 }
 
 .content__video-card-description {
-  font-weight: normal;
   font-weight: 400;
   font-size: 18px;
 }
 
 .content__video-card-description-container {
-  color: white;
+  color: #fff;
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 194px;
@@ -245,10 +250,11 @@ ol {
 
 .title {
   position: relative;
+  font-family: "Oswald", sans-serif;
   font-size: 75px;
   text-transform: uppercase;
-  line-height: 90%;
-  padding-bottom: 10px;
+  line-height: 94%;
+  padding-bottom: 6px;
 }
 
 .result {
@@ -277,8 +283,8 @@ ol {
   font-size: 18px;
   font-weight: 700;
   line-height: calc(21.6 / 18 * 100%);
-  color: white;
-  border: 1px solid white;
+  color: inherit;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
